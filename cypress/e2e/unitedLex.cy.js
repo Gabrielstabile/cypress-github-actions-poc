@@ -37,6 +37,5 @@ describe('united lex testing', () => {
 
         cy.get('label[class=hs-main-font-element]')
             .should('have.text', 'Please complete all required fields.')
-            
       })
 })
