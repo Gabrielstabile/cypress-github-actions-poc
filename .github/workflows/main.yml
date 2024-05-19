@@ -15,4 +15,3 @@ jobs:
         with:
           build: npm install
           start: yarn cypress run
-          browser: chrome
