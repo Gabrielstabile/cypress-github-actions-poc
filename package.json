@@ -1,0 +1,16 @@
+{
+  "name": "cypress-github-actions-poc",
+  "version": "1.0.0",
+  "description": "Cypress project studying for github actions",
+  "main": "index.js",
+  "author": "Gabriel Stabile",
+  "license": "MIT",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "@faker-js/faker": "^8.4.1",
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.29.0",
+    "allure-cypress": "^2.15.1",
+    "cypress": "^13.9.0"
+  }
+}
