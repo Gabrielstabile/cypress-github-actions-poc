@@ -12,5 +12,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       allureCypress(on);
     },
+
+    experimentalModifyObstructiveThirdPartyCode: true,
   },
 });
