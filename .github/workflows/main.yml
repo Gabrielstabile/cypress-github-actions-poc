@@ -8,10 +8,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Install npm dependencies, cache them correctly
+
+      # Install yarn dependencies, cache them correctly
       # and run all Cypress tests
+      # skiping tests at this moment, we'll do it later
+      - name: install dependencies
+        uses: cypress-io/github-action@v6
+        with:
+          runTests: false
+
+
+      # Configuring the cypress run
+      #install: false -> we already did it in the previous step
+      #browser: chrome -> setting up the browser to run
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          build: npm install
-          start: yarn cypress run
+          install: false
+          browser: chrome
